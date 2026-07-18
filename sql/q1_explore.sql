@@ -1,2 +1,2 @@
-SELECT strftime('%w', ActivityDate) as day_of_week, TotalSteps
+SELECT ActivityDate, TotalSteps 
 FROM dailyActivity;
