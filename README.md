@@ -15,3 +15,4 @@
 
 5. On which days of the week are people most and least active?
 (just dailyActivity_merged — extracting the day from the date column)
+------Saturday is the most active day(8152,975avg Steps), Sunday is the least active (6933 avg steps)
