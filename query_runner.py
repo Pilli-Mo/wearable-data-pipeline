@@ -10,5 +10,8 @@ query = """
                 AND dailyActivity.ActivityDate = sleepDay.SleepDay;
 """
 df = pd.read_sql_query(query, conn)
-print(df)
+
+correlation = df["TotalSteps"].corr(df["TotalMinutesAsleep"])
+
+print("Correlation between Total Steps and Total Minutes Asleep: ", correlation)
 conn.close()
