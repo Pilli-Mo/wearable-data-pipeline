@@ -3,6 +3,7 @@
 ### Questions this Project investigate
 1. Does higher daily step count lead to longer or better sleep that night?
 (connects dailyActivity_merged and sleepDay_merged on the same user and date)
+----there is a weak negative relationship — more active days are slightly associated with less sleep, but the effect is small and step count is not a strong predictor of sleep.
 
 2. Do people who sleep more hours perform better in activity the following day — more steps, fewer sedentary minutes?
 (same two tables, but flipping the direction of the question)
