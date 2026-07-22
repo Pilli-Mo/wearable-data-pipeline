@@ -4,10 +4,9 @@ import pandas as pd
 conn = sqlite3.connect("wearable_data.db")
 
 query = """
-        Select Id, count(*) as days_tracked
-        From dailyActivity
-        Group by Id
-        Having count(*) < 25;
+        Select id, strftime('%Y-%m-%d', Time) as day, AVG(value) as avg_heartrate
+        from heartrate
+        Group by Id,day;
 """
 df = pd.read_sql_query(query, conn)
 

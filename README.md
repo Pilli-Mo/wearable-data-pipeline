@@ -13,6 +13,7 @@
 
 4. Which users stopped wearing their tracker before the end of the study period?
 (just dailyActivity_merged — looking at who has gaps or disappears after week one)
+---2347167796 (18 days), 3372868164 (20 days), 4057192912 (only 4 days — essentially abandoned the study), and 8253242879 (19 days). Everyone else stayed consistent at 26+ days.
 
 5. On which days of the week are people most and least active?
 (just dailyActivity_merged — extracting the day from the date column)

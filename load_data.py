@@ -11,8 +11,13 @@ activity_df["ActivityDate"] = pd.to_datetime(activity_df["ActivityDate"]).dt.str
 sleep_df = pd.read_csv("data/raw/sleepDay_merged.csv")
 sleep_df["SleepDay"] = pd.to_datetime(sleep_df["SleepDay"]).dt.strftime("%Y-%m-%d")  # convert the SleepDay column to datetime format
 
+heartrate_df= pd.read_csv("data/raw/heartrate_seconds_merged.csv")
+heartrate_df["Time"] = pd.to_datetime(heartrate_df["Time"]).dt.strftime("%Y-%m-%d %H:%M:%S")  # convert the Time column to datetime format
+
 # Step 3: then write the DataFrame into a database table
 activity_df.to_sql("dailyActivity", conn, if_exists="replace", index=False)
 sleep_df.to_sql("sleepDay", conn, if_exists="replace", index=False)
+heartrate_df.to_sql("heartrate", conn, if_exists="replace", index=False)
+
 # Step 4: close the database connection
 conn.close()
