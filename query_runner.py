@@ -19,5 +19,11 @@ df = pd.read_sql_query(query, conn)
 # correlation = df["TotalSteps"].corr(df["TotalMinutesAsleep"])
 
 # print("Correlation between Total Steps and Total Minutes Asleep: ", correlation)
-print(df)
+
+correlation = df["TotalSteps"].corr(df["avg_heartrate"])
+
+
+print("Correlation between Total Steps and Average Heart Rate: ", correlation)
+
+# print(df)
 conn.close()

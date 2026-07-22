@@ -10,6 +10,7 @@
 
 3. Does a high heart rate always come from high physical activity, or are there users with high heart rate and low step counts?
 (connects heartrate_seconds_merged and dailyActivity_merged — the interesting outliers)
+--- there's a slight positive relationship between steps and heart rate, but it's weak — high heart rate is not reliably explained by high activity alone. Other factors (stress, health conditions, caffeine, etc.) likely play a bigger role.
 
 4. Which users stopped wearing their tracker before the end of the study period?
 (just dailyActivity_merged — looking at who has gaps or disappears after week one)
